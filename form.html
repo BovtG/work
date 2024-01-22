@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <style>
+        
+        body{
+            background-color: #2D2A32;
+    
+        }
+        form{
+            font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+            width: 500;
+            padding: 32px 48px;
+            margin: 200px auto ;
+            background: white;
+            display:flex;
+            flex-direction: column;
+            border-radius: 32px;
+            color:#2D2A32;
+
+        
+        }
+        button{
+            border-radius: 32px;
+            width: 200px;
+            height: 50px;
+            color: #2D2A32;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <h1>Есть предложения? Напишите!</h1>
+            <p>
+                <h2><b>Напишите ваше ФИО:</b></h2>
+                 <input type="text" name="login" />
+            </p>
+            <p>
+                <h2><b>Опишите вашу идею:</b></h2>
+                <textarea id="idea "type="text" name="idea" 
+                    cols="30" rows="7"></textarea>
+            </p>
+            <p>
+                <h2><b>Выберите характер проблемы:</b></h2>
+                <select id="type" name="type" color:#2D2A32>
+                    <option value="work">Проблема в рабочем процессе</option>
+                    <option value="life">Проблема в микрорайоне</option>
+                                        <option value="other">Другое</option>
+                </select>
+            </p>
+            <p>
+                <h2><b>Опишите решаемую проблему:</b></h2>
+                <textarea id="problem "type="text" name="problem" 
+                    cols="30" rows="7"></textarea>
+            </p>
+            <p>
+                <h2><b>Улучшаемые процессы:</b></h2>
+                <input type="text" name="process" required />
+            </p>
+            <p><button type="submit">Отправить</button>
+    </form>
+</body>
+</html>
