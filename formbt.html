@@ -10,19 +10,19 @@
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <form >
+    <form class="col-sm-8" style=" margin: 0 auto;">
         <h1>Есть предложения? Напишите!</h1>
             <div class="form-group">
-                <h2><b>Напишите ваше ФИО:</b></h2>
+                <label for="login"><b>Напишите ваше ФИО:</b></label>
                  <input class="form-control" type="text" name="login" />
             </div>
             <div class="form-group">
-                <h2><b>Опишите вашу идею:</b></h2>
+                <label for="idea"><b>Опишите вашу идею:</b></label>
                 <textarea class="form-control" id="idea "type="text" name="idea" 
                     cols="30" rows="7"></textarea>
             </div>
             <div class="form-group">
-                <h2><b>Выберите характер проблемы:</b></h2>
+                <label for="type"><b>Выберите характер проблемы:</b></label>
                 <select class="form-control" id="type" name="type" color:#2D2A32>
                     <option value="work">Проблема в рабочем процессе</option>
                     <option value="life">Проблема в микрорайоне</option>
@@ -30,16 +30,17 @@
                 </select>
             </div>
             <div class="form-group">
-                <h2><b>Опишите решаемую проблему:</b></h2>
+                <label for="problem"><b>Опишите решаемую проблему:</b></label>
                 <textarea class="form-control" id="problem "type="text" name="problem" 
                     cols="30" rows="7"></textarea>
             </div>
             <div class="form-group">
-                <h2><b>Улучшаемые процессы:</b></h2>
+                <label for="process"><b>Улучшаемые процессы:</b></label>
                 <input class="form-control" type="text" name="process" required /></input>
             </div>
             <div class="form-group">
-                <button class="form-control"type="submit">Отправить</button>
+                <hr/> 
+                <button class="btn btn-success"type="submit">Отправить</button>
             </div>
     </form>
 </body>
